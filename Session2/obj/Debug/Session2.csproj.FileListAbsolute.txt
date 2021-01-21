@@ -1,0 +1,12 @@
+D:\Work\Session2\Session2\bin\Debug\Session2.exe.config
+D:\Work\Session2\Session2\bin\Debug\Session2.exe
+D:\Work\Session2\Session2\bin\Debug\Session2.pdb
+D:\Work\Session2\Session2\obj\Debug\Session2.csprojAssemblyReference.cache
+D:\Work\Session2\Session2\obj\Debug\Session2.ManageForm.resources
+D:\Work\Session2\Session2\obj\Debug\Session2.Properties.Resources.resources
+D:\Work\Session2\Session2\obj\Debug\Session2.csproj.GenerateResource.cache
+D:\Work\Session2\Session2\obj\Debug\Session2.csproj.CoreCompileInputs.cache
+D:\Work\Session2\Session2\obj\Debug\Session2.exe
+D:\Work\Session2\Session2\obj\Debug\Session2.pdb
+D:\Work\Session2\Session2\obj\Debug\Session2.EditForm.resources
+D:\Work\Session2\Session2\obj\Debug\Session2.ImportForm.resources
