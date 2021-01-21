@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkBoxReverse = new System.Windows.Forms.CheckBox();
             this.checkBoxOut = new System.Windows.Forms.CheckBox();
             this.btnApply = new System.Windows.Forms.Button();
             this.dtpOutbound = new System.Windows.Forms.DateTimePicker();
@@ -45,7 +46,6 @@
             this.btnCancelFly = new System.Windows.Forms.Button();
             this.btnEditFly = new System.Windows.Forms.Button();
             this.btnImportChanges = new System.Windows.Forms.Button();
-            this.checkBoxReverse = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridSchedules)).BeginInit();
             this.SuspendLayout();
@@ -73,6 +73,17 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filter by";
             // 
+            // checkBoxReverse
+            // 
+            this.checkBoxReverse.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("checkBoxReverse.BackgroundImage")));
+            this.checkBoxReverse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.checkBoxReverse.Location = new System.Drawing.Point(810, 38);
+            this.checkBoxReverse.Name = "checkBoxReverse";
+            this.checkBoxReverse.Size = new System.Drawing.Size(59, 17);
+            this.checkBoxReverse.TabIndex = 10;
+            this.checkBoxReverse.UseVisualStyleBackColor = true;
+            this.checkBoxReverse.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
+            // 
             // checkBoxOut
             // 
             this.checkBoxOut.Location = new System.Drawing.Point(35, 82);
@@ -86,6 +97,7 @@
             // 
             // btnApply
             // 
+            this.btnApply.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(106)))), ((int)(((byte)(166)))));
             this.btnApply.Location = new System.Drawing.Point(654, 80);
             this.btnApply.Name = "btnApply";
             this.btnApply.Size = new System.Drawing.Size(150, 25);
@@ -201,6 +213,7 @@
             // 
             // btnCancelFly
             // 
+            this.btnCancelFly.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(106)))), ((int)(((byte)(166)))));
             this.btnCancelFly.Location = new System.Drawing.Point(47, 416);
             this.btnCancelFly.Name = "btnCancelFly";
             this.btnCancelFly.Size = new System.Drawing.Size(140, 28);
@@ -211,6 +224,7 @@
             // 
             // btnEditFly
             // 
+            this.btnEditFly.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(106)))), ((int)(((byte)(166)))));
             this.btnEditFly.Location = new System.Drawing.Point(193, 416);
             this.btnEditFly.Name = "btnEditFly";
             this.btnEditFly.Size = new System.Drawing.Size(140, 28);
@@ -221,6 +235,7 @@
             // 
             // btnImportChanges
             // 
+            this.btnImportChanges.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(106)))), ((int)(((byte)(166)))));
             this.btnImportChanges.Location = new System.Drawing.Point(696, 416);
             this.btnImportChanges.Name = "btnImportChanges";
             this.btnImportChanges.Size = new System.Drawing.Size(120, 28);
@@ -228,17 +243,6 @@
             this.btnImportChanges.Text = "Import Changes";
             this.btnImportChanges.UseVisualStyleBackColor = true;
             this.btnImportChanges.Click += new System.EventHandler(this.btnImportChanges_Click);
-            // 
-            // checkBoxReverse
-            // 
-            this.checkBoxReverse.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("checkBoxReverse.BackgroundImage")));
-            this.checkBoxReverse.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.checkBoxReverse.Location = new System.Drawing.Point(810, 38);
-            this.checkBoxReverse.Name = "checkBoxReverse";
-            this.checkBoxReverse.Size = new System.Drawing.Size(59, 17);
-            this.checkBoxReverse.TabIndex = 10;
-            this.checkBoxReverse.UseVisualStyleBackColor = true;
-            this.checkBoxReverse.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged_1);
             // 
             // ManageForm
             // 

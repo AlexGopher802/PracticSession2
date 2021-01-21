@@ -53,6 +53,8 @@ namespace Session2
 
                 ExcelRange = ExcelWorkSheet.UsedRange;
                 dataGridView2.AllowUserToAddRows = false;
+                dataGridView2.Rows.Clear();
+                dataGridView2.Columns.Clear();
                 dataGridView2.Columns.Add("Test", "Test");
                 dataGridView2.Columns.Add("Test2", "Test2");
                 dataGridView2.Columns[1].Visible = false;
@@ -71,10 +73,24 @@ namespace Session2
                 releaseObject(ExcelWorkSheet);
                 releaseObject(ExcelWorkBook);
                 releaseObject(ExcelApp);
+
+                int applyCount = 0;
+                int duplicetedCount = 0;
+                int unCorrectCount = 0;
+                foreach(DataGridViewRow i in dataGridView2.Rows)
+                {
+                    ParsingClass parsing = new ParsingClass(i.Cells[0].Value.ToString());
+                    if (parsing.status == ParsingClass.StatusCode.Succes) { applyCount++; }
+                    if (parsing.status == ParsingClass.StatusCode.Duplicate) { duplicetedCount++; }
+                    if (parsing.status == ParsingClass.StatusCode.NotCorrect) { unCorrectCount++; }
+                }
+                lblChangesApplied.Text = applyCount.ToString();
+                lblRecordsDuplicate.Text = duplicetedCount.ToString();
+                lblFieldsDiscarded.Text = unCorrectCount.ToString();
             }
             catch
             {
-
+                return;
             }
         }
 
